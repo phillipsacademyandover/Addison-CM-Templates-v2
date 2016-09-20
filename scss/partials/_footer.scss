@@ -1,0 +1,35 @@
+/*------------------------------------*\
+    # FOOTER
+/*------------------------------------*/
+
+.footer { 
+    color: $dkgrey;
+    font-family:$sans-serif;
+    -webkit-font-smoothing: antialiased;
+    
+    .vcard,
+    .legal {
+        font-size:$small-font-size;
+    }
+}
+
+.vcard,
+.cm-preferences,
+.webversion,
+.legal {
+    line-height: 140%;
+    text-align:center;
+}
+
+/* MOBILE STREET ADDRESS */
+@media screen and (max-width:479px) {
+    .vcard {
+        .street-address {
+            display:block !important;
+            width:100% !important;
+        }
+        .mobile-hide {
+            display: none !important;
+        }
+    }
+}
